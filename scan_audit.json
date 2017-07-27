@@ -1,0 +1,67 @@
+{
+  "url" :"",
+  "scope": {
+    "page_limit": 0,
+    "exclude_path_patterns": [] 
+  },
+  "http" : {
+    "user_agent" : "Baiduspider+(+http://www.baidu.com/search/spider.htm)",
+    "request_timeout" : 10000,
+    "request_redirect_limit" : 5,
+    "request_concurrency" : 20,
+    "request_queue_size" : 100,
+    "request_headers" : {},
+    "response_max_size" : 500000,
+    "cookie_string" : {}
+  },
+  "audit" : {
+    "parameter_values" : true,
+    "exclude_vector_patterns" : [],
+    "include_vector_patterns" : [],
+    "link_templates" : [],
+    "links" : true,
+    "forms" : true,
+    "cookies" : true,
+    "jsons" : true,
+    "xmls" : true,
+    "ui_forms" : true,
+    "ui_inputs" : true
+  },
+  "checks" : [
+    "backup_files",
+    "form_upload",
+    "code_injection",
+    "code_injection_php_input_wrapper",
+    "code_injection_timing",
+    "csrf",
+    "file_inclusion",
+    "ldap_injection",
+    "no_sql_injection",
+    "no_sql_injection_differential",
+    "os_cmd_injection",
+    "os_cmd_injection_timing",
+    "path_traversal",
+    "response_splitting",
+    "rfi",
+    "session_fixation",
+    "source_code_disclosure",
+    "sql_injection",
+    "sql_injection_differential",
+    "sql_injection_timing",
+    "trainer",
+    "unvalidated_redirect",
+    "unvalidated_redirect_dom",
+    "xpath_injection",
+    "xss",
+    "xss_dom",
+    "xss_dom_script_context",
+    "xss_event",
+    "xss_path",
+    "xss_script_context",
+    "xss_tag",
+    "xxe"
+  ],
+  "plugins" : {
+    "vector_feed":{}
+  }
+}
